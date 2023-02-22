@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug .top {
+    background-color: azure;
+}
+
+.debug footer {
+    background-color: lightcoral;
+}
+
+.debug .sidebar {
+    background-color: red;
+}
+
+.debug .content {
+    background-color: chartreuse;
+}
+
+/*debug_zone*/
+
+.top {
+    height: calc(100vh - 70px);
+    display: flex;
+}
+
+.top>.sidebar {
+    width: 70px;
+}
+
+.top>.content {
+    width: calc(100% - 70px);
+}
+
+footer .bottom {
+    height: 70px;
+}
+
+
+
+
+
+
+/*resposive*/
+
+
+@media screen and (min-width: 768px) {
+
+    .top>.sidebar {
+        width: 220px;
+    }
+
+    .top>.content {
+width: calc(100% - 220px);
+    }
+
+
+}
