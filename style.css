@@ -20,6 +20,55 @@
     background-color: chartreuse;
 }
 
+
+.debug [class^="col_"] {
+    height: 100%;
+    border: 1px dashed white;
+}
+
+.debug #main_container [class^="col_"] {
+    height: 250px;
+    border: 1px dashed black;
+}
+
+.debug [class^="side_"] {
+    border: 1px dashed white;
+    color: white;
+}
+
+.debug #labels {
+    background-color: palegreen;
+    border: 1px solid white;
+}
+
+.debug #played {
+    background-color: palegoldenrod;
+    border: 1px solid white;
+}
+
+.debug #created {
+    background-color: paleturquoise;
+    border: 1px solid white;
+}
+
+.debug #popular {
+    background-color: palevioletred;
+    border: 1px solid white;
+}
+
+.debug .banner {
+    background-color: beige;
+    height: 90px;
+}
+
+
+
+
+
+
+
+
+
 /*debug_zone*/
 
 .top {
@@ -33,16 +82,8 @@
 }
 .top .sidebar_top{
     height: calc(100% - 60px);
+   
 }
-
-.top .sidebar_bottom{
-    height: 60px;
-}
-
-
-
-
-
 .top>.content {
     
     width: calc(100% - 70px);
@@ -53,6 +94,36 @@ footer .bottom {
     height: 70px;
 }
 
+.banner {
+    padding:  2rem;
+    margin: 1rem;
+  
+}
+
+
+
+.row{
+    width: 100%;
+    display: flex;
+}
+
+
+.col_12{
+    width: 100%;
+}
+
+.col_4 {
+    width: calc(100% / 12 * 4);
+}
+
+.col_6 {
+    width: calc(100% / 12 * 6);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
 
 
