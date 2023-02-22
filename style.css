@@ -4,22 +4,11 @@
     box-sizing: border-box;
 }
 
-.debug .top {
-    background-color: azure;
-}
 
-.debug footer {
-    background-color: lightcoral;
-}
 
 .debug .sidebar {
-    background-color: red;
+  background-color: red;
 }
-
-.debug .content {
-    background-color: chartreuse;
-}
-
 
 .debug [class^="col_"] {
     height: 100%;
