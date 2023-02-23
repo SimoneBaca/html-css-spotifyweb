@@ -85,7 +85,7 @@ img {
 }
 
 .col_6 {
-    width: calc(100% / 12 * 6);
+    width: calc(100% / 12 * 3);
 }
 
 .col_12 {
@@ -317,12 +317,16 @@ img {
 }
 
 
-#played h2 {
+#played h2,
+#personal p
+{
     line-height: 1.75rem;
     margin-bottom: 1.25rem;
 }
 
-#played .card {
+#played .card,
+#personal .card
+{
     padding: .5rem;
     min-height: 100%;
     display: flex;
@@ -332,7 +336,8 @@ img {
     gap: .5rem;
 }
 
-#played .row {
+#played .row,
+#personal .row {
     margin-left: -.5rem;
     margin-right: -.5rem;
 }
