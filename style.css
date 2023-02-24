@@ -7,7 +7,7 @@
 }
 
 :root {
-   
+
     --dark: #000000;
     --light: #fefffe;
     --primary: #151822;
@@ -16,6 +16,7 @@
     --tertiary-dark: #444444;
     --special: #adff2f;
     --shadow: #00000066;
+
     --ff: 'Circular Std', sans-serif;
 }
 
@@ -25,7 +26,6 @@ body {
 
 img {
     max-width: 100%;
-    padding: 0.5rem;
 }
 
 .debug #player,
@@ -69,16 +69,19 @@ img {
 }
 
 .debug .banner {
-    
+    background-color: beige;
     height: 90px;
 }
 
-/*  debug */
-
+/*debug*/
 
 .row {
     width: 100%;
     display: flex;
+}
+
+.col_3 {
+    width: calc(100% / 12 * 3);
 }
 
 .col_4 {
@@ -86,17 +89,15 @@ img {
 }
 
 .col_6 {
-    width: calc(100% / 12 * 3);
-    
+    width: calc(100% / 12 * 6);
 }
 
 .col_12 {
     width: 100%;
 }
 
-
 .visibility_none {
-
+    display: none;
 }
 
 .container {
@@ -132,13 +133,14 @@ img {
 
 .transparent_btn {
     background-color: transparent;
+
     color: var(--light);
+
     border: 1px solid var(--light);
     border-radius: 1rem;
+
     padding: .5rem 1.5rem;
 }
-
-
 
 .tertiary_btn {
     background-color: var(--tertiary);
@@ -159,7 +161,45 @@ img {
     color: var(--tertiary);
 }
 
+.card {
+    padding: 1rem;
+}
 
+.card_img {
+    position: relative;
+}
+
+.card_overlay {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 300;
+}
+
+.card_img:hover .card_overlay {
+    display: block;
+}
+
+.card_overlay i {
+    position: absolute;
+    top: calc(50% - 1.75rem);
+    left: calc(50% - 1.75rem);
+    z-index: 400;
+    cursor: pointer;
+}
+
+.card_overlay i.text_lg {
+    font-size: 3.5rem;
+}
+
+.overlay {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: var(--shadow);
+}
 
 
 #app_main {
@@ -174,29 +214,44 @@ img {
     background-color: var(--secondary);
 }
 
+
 #app_main {
     height: calc(100vh - 100px);
     display: flex;
     position: relative;
 }
 
+#app_main .row {
+    flex-wrap: wrap;
+}
 
 #app_main .banner {
     width: calc(100% - .8rem);
+
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
     background-color: var(--shadow);
-    padding: 2rem .5rem;
+    padding: 2rem 1.5rem;
+}
+
+#app_main .banner .btn {
+    transition: .25s all ease-in-out;
+}
+
+#app_main .banner .btn:hover {
+    scale: 1.2;
 }
 
 
 #sidebar {
     height: 100%;
+    width: 60px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 #sidebar .side_top {
@@ -280,6 +335,57 @@ img {
     fill: var(--light);
 }
 
+#sidebar .side_top li:hover span,
+#sidebar .side_middle li:hover {
+    color: var(--light);
+    cursor: pointer;
+}
+
+#sidebar .side_middle .button:hover {
+    cursor: pointer;
+}
+
+#sidebar .side_middle .button:hover .btn {
+    background-color: var(--light);
+}
+
+#sidebar .side_middle .button:hover span {
+    color: var(--light);
+}
+
+#sidebar .side_top li:hover .svg_icon path {
+    fill: var(--light);
+}
+
+#sidebar .side_bottom li:first-child {
+    display: flex;
+}
+
+#sidebar .side_bottom li:first-child a {
+    margin-left: 2.2rem;
+    text-decoration: none;
+}
+
+#sidebar .side_bottom li:first-child a:hover {
+    color: var(--light);
+    text-decoration: underline;
+    text-decoration-color: var(--special);
+    text-decoration-thickness: 2px;
+}
+
+#sidebar .side_bottom li:hover {
+    cursor: pointer;
+}
+
+#sidebar .side_bottom li:nth-child(2):hover span {
+    color: var(--light);
+}
+
+#sidebar .side_bottom li:nth-child(2):hover path {
+    fill: var(--light);
+}
+
+
 #main_container {
     width: calc(100% - 60px);
     overflow-y: auto;
@@ -290,7 +396,16 @@ img {
 }
 
 #main_container .container {
-    padding: 0 1.2rem;
+    width: 98%;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+
+#main_container section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -319,34 +434,33 @@ img {
     background-color: var(--special);
 }
 
+#labels .label:hover {
+    color: var(--light);
+    cursor: pointer;
+}
 
 #played h2,
 #personal p,
-#popular p
-{
+#popular p {
     line-height: 1.75rem;
     margin-bottom: 1.25rem;
 }
 
 #played .card,
-#personal .card
-#popular .card
-{
-    
+#personal .card,
+#popular .card {
     min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 0.5rem;
+    gap: .5rem;
 }
 
 #played .row,
-#personal .row
-#popular .row
-{
-    margin-left: -.5rem;
-    margin-right: -.5rem;
+#personal .row {
+    margin-left: -1rem;
+    margin-right: -1rem;
 }
 
 #played .card h4 {
@@ -354,15 +468,11 @@ img {
 }
 
 #popular .card img {
-    border-radius: 50%;
+    cursor: pointer;
 }
 
-
-
-
-
-h4{
-    text-align: center;
+#popular .card img {
+    border-radius: 50%;
 }
 
 
@@ -378,7 +488,7 @@ h4{
     color: var(--light);
 }
 
-#app_footer .row .col_4:last-child {
+#app_footer .row .col_3:last-child {
     display: flex;
     justify-content: flex-end;
 }
@@ -393,23 +503,25 @@ h4{
 
 .song,
 .player,
-.player_settings 
-{
+.player_settings {
     height: 100px;
+}
+
+.player_settings .volume_bar .outer_bar {
+    display: none;
 }
 
 .song {
     display: flex;
     justify-content: flex-start;
-    margin-left: 1rem;
+    padding: 1rem;
 }
 
 .song_img {
-    width: 40px;
+    display: none;
 }
 
-.song_data,
-.song_buttons {
+.song_data {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -417,7 +529,7 @@ h4{
 }
 
 .song_buttons {
-    gap: .5rem;
+    display: none;
 }
 
 .song_data span:nth-child(2):hover {
@@ -425,13 +537,15 @@ h4{
     color: var(--light);
 }
 
+
+
 .player {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: .5rem;
-    padding: .5rem;
+    padding: 1rem;
 }
 
 .player_settings {
@@ -440,7 +554,7 @@ h4{
 }
 
 .player {
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -455,6 +569,7 @@ h4{
     justify-content: space-between;
     align-items: center;
 }
+
 .player_bar {
     height: 40%;
     width: 100%;
@@ -469,7 +584,7 @@ h4{
 }
 
 .outer_bar {
-    margin: .2rem .25rem 0;
+    margin: .25rem .25rem;
     height: 8px;
     width: 100%;
     background-color: var(--tertiary-dark);
@@ -479,11 +594,12 @@ h4{
 }
 
 .inner_bar {
-    height: 6px;
+    height: 100%;
     width: 30%;
     background-color: var(--tertiary);
     border-radius: 4px;
     margin-left: 1px;
+    position: relative;
 }
 
 .bar_circle {
@@ -492,9 +608,9 @@ h4{
     background-color: var(--light);
     border-radius: 50%;
     cursor: grab;
-    position: relative;
-    top: 0;
-    left: -7px;
+    position: absolute;
+    top: -4px;
+    left: 90%;
 }
 
 .outer_bar:hover .inner_bar {
@@ -504,18 +620,22 @@ h4{
 .outer_bar:hover .bar_circle.visibility_none {
     display: block;
 }
+
+
+
 .player_settings {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     gap: .5rem;
     margin-right: .5rem;
 }
 
-.player_settings span 
-{
-    width: 40%;
+.player_settings .settings,
+.player_settings .volume_bar {
+    display: flex;
+    gap: .5rem;
 }
 
 .player_settings #player_volume {
@@ -523,8 +643,8 @@ h4{
 }
 
 
-/*resposive*/
 
+/*responsive */
 
 @media screen and (min-height: 500px) {
 
@@ -540,6 +660,8 @@ h4{
         z-index: 500;
     }
 }
+
+
 
 @media screen and (min-width: 469px) {
     .col_sm_6 {
@@ -557,6 +679,7 @@ h4{
 @media screen and (min-width: 576px) {
     #sidebar {
         width: 250px;
+        padding: 1rem;
     }
 
     #main_container {
@@ -565,13 +688,12 @@ h4{
 
     #app_main .banner {
         width: calc(100% - .8rem);
-    }    
+    }
 
     #sidebar .side_top,
-    #sidebar .side_bottom
-    {
+    #sidebar .side_bottom {
         align-items: flex-start;
-    }  
+    }
 
     #sidebar .side_middle {
         flex-grow: 3;
@@ -582,8 +704,7 @@ h4{
     }
 
     #sidebar .side_top li,
-    #sidebar .side_bottom li
-    {
+    #sidebar .side_bottom li {
         display: flex;
         justify-content: flex-start;
     }
@@ -594,26 +715,23 @@ h4{
 
     .side_top .logo.visibility {
         display: none;
-    } 
-    
+    }
+
     .side_top .logo.visibility_none {
         display: block;
-    } 
+    }
 
     .side_top .visibility_none,
-    .side_bottom .visibility_none 
-    {
+    .side_bottom .visibility_none {
         display: inline-block;
     }
 
-    .svg_icon
-    {
+    .svg_icon {
         margin-right: .75rem;
     }
 
     .side_top li,
-    .side_middle
-    {
+    .side_middle {
         padding-left: 1rem;
     }
 
@@ -623,8 +741,7 @@ h4{
 
     .side_top li>span,
     .side_middle li>span,
-    .side_bottom li>span
-    {
+    .side_bottom li>span {
         align-self: center;
     }
 
@@ -661,11 +778,12 @@ h4{
 
 }
 
+
 @media screen and (min-width: 768px) {
     .col_md_3 {
         width: calc(100% / 12 * 3);
     }
-    
+
     .col_md_4 {
         width: calc(100% / 12 * 4);
     }
@@ -678,7 +796,7 @@ h4{
         display: inline-block;
         width: 40px;
         min-width: 32px;
-    } 
+    }
 
     .player {
         width: 100%;
@@ -693,16 +811,15 @@ h4{
     }
 
     .player_settings .settings,
-    .player_settings .volume_bar
-    {
-        gap: 0.5rem;
+    .player_settings .volume_bar {
+        gap: .5rem;
     }
 
     .player_settings .settings {
         max-width: 20%;
         max-width: 3rem;
         justify-content: flex-end;
-        
+
     }
 
     .player_settings .volume_bar .outer_bar {

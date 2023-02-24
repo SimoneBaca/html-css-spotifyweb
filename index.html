@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>MySpotify</title>
+        <title>SpOtiFy</title>
 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,10 +13,9 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
             integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-
         <link rel="stylesheet" href="./style.css">
     </head>
-    <body class=>
+    <body class="">
         <div id="app_main">
             <aside id="sidebar">
                 <div class="side_top">
@@ -175,9 +173,11 @@
                                     </div>
                                     <div class="side_middle visibility_none">
                                         <h4 class="color_light text_sm">Playlist</h4>
-                                        <button class="btn tertiary_btn sharp">+</button>
-                                        <span class="color_tertiary">Crea
-                                            Playlist</span>
+                                        <div class="button">
+                                            <button class="btn tertiary_btn">+</button>
+                                            <span class="color_tertiary">Crea
+                                                Playlist</span>
+                                        </div>
                                         <ul class="list_unstyled">
                                             <li class="color_tertiary">
                                                 Nome Playlist
@@ -202,8 +202,16 @@
                                             </li>
                                         </ul>
                                     </div>
+
                                     <div class="side_bottom">
                                         <ul class="list_unstyled">
+                                            <li>
+                                                <a href="#" class="link
+                                                    color_tertiary
+                                                    visibility_none">
+                                                    Effettua l'upgrade
+                                                </a>
+                                            </li>
                                             <li>
                                                 <div class="svg_icon">
                                                     <svg viewBox="0 0 20 20"
@@ -233,8 +241,7 @@
                                                     </span>
                                                 </li>
                                                 <li>
-                                                    <div class="svg_icon">
-                                                    </div>
+                                                    <div class="svg_icon"></div>
                                                     <span class="color_light
                                                         visibility_none">
                                                         John Doe
@@ -295,13 +302,26 @@
                                                 <h2 class="color_light">Recently
                                                     played</h2>
                                                 <div class="row">
-                                                    <div class="col_6 col_md_3
-                                                        col_lg_2">
+                                                    <div class="col_12 col_sm_6
+                                                        col_md_3 col_lg_2">
                                                         <div class="card">
-                                                            <img
-                                                                src="./img/metal_lifting.jpg"
-                                                                alt="
-                                                                Metal">
+                                                            <div
+                                                                class="card_img">
+                                                                <img
+                                                                    src="./img/metal_lifting.jpg"
+                                                                    alt="Heavy
+                                                                    Metal">
+                                                                <div
+                                                                    class="card_overlay">
+                                                                    <div
+                                                                        class="overlay"></div>
+                                                                    <i
+                                                                        class="fa-regular
+                                                                        fa-circle-play
+                                                                        color_light
+                                                                        text_lg"></i>
+                                                                </div>
+                                                            </div>
                                                             <h4
                                                                 class="color_light">
                                                                 Heavy Metal
@@ -312,14 +332,28 @@
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <div class="col_6 col_md_3
-                                                        col_lg_2">
+                                                    <div class="col_12 col_sm_6
+                                                        col_md_3 col_lg_2">
                                                         <div class="card">
-                                                            <img
-                                                                src="./img/stranger.jpeg"
-                                                                alt="Stranger
-                                                                Things Original
-                                                                Soundtrack">
+                                                            <div
+                                                                class="card_img">
+                                                                <img
+                                                                    src="./img/stranger.jpeg"
+                                                                    alt="Stranger
+                                                                    Things
+                                                                    Original
+                                                                    Soundtrack">
+                                                                <div
+                                                                    class="card_overlay">
+                                                                    <div
+                                                                        class="overlay"></div>
+                                                                    <i
+                                                                        class="fa-regular
+                                                                        fa-circle-play
+                                                                        color_light
+                                                                        text_lg"></i>
+                                                                </div>
+                                                            </div>
                                                             <h4
                                                                 class="color_light">
                                                                 Stranger Things,
@@ -335,13 +369,26 @@
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <div class="col_6 col_md_3
-                                                        col_lg_2">
+                                                    <div class="col_12 col_sm_6
+                                                        col_md_3 col_lg_2">
                                                         <div class="card">
-                                                            <img
-                                                                src="./img/aquietplace.jpeg"
-                                                                alt="A quiet
-                                                                place">
+                                                            <div
+                                                                class="card_img">
+                                                                <img
+                                                                    src="./img/aquietplace.jpeg"
+                                                                    alt="A quiet
+                                                                    place">
+                                                                <div
+                                                                    class="card_overlay">
+                                                                    <div
+                                                                        class="overlay"></div>
+                                                                    <i
+                                                                        class="fa-regular
+                                                                        fa-circle-play
+                                                                        color_light
+                                                                        text_lg"></i>
+                                                                </div>
+                                                            </div>
                                                             <h4
                                                                 class="color_light">
                                                                 A quiet place
@@ -352,12 +399,25 @@
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <div class="col_6 col_md_3
-                                                        col_lg_2">
+                                                    <div class="col_12 col_sm_6
+                                                        col_md_3 col_lg_2">
                                                         <div class="card">
-                                                            <img
-                                                                src="./img/split.jpeg"
-                                                                alt="Split">
+                                                            <div
+                                                                class="card_img">
+                                                                <img
+                                                                    src="./img/split.jpeg"
+                                                                    alt="Split">
+                                                                <div
+                                                                    class="card_overlay">
+                                                                    <div
+                                                                        class="overlay"></div>
+                                                                    <i
+                                                                        class="fa-regular
+                                                                        fa-circle-play
+                                                                        color_light
+                                                                        text_lg"></i>
+                                                                </div>
+                                                            </div>
                                                             <h4
                                                                 class="color_light">
                                                                 Split
@@ -368,13 +428,27 @@
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <div class="col_6 col_md_3
-                                                        col_lg_2">
+                                                    <div class="col_12 col_sm_6
+                                                        col_md_3 col_lg_2">
                                                         <div class="card">
-                                                            <img
-                                                                src="./img/cure.jpeg"
-                                                                alt="A cure for
-                                                                wellness">
+                                                            <div
+                                                                class="card_img">
+                                                                <img
+                                                                    src="./img/cure.jpeg"
+                                                                    alt="A cure
+                                                                    of
+                                                                    wellness">
+                                                                <div
+                                                                    class="card_overlay">
+                                                                    <div
+                                                                        class="overlay"></div>
+                                                                    <i
+                                                                        class="fa-regular
+                                                                        fa-circle-play
+                                                                        color_light
+                                                                        text_lg"></i>
+                                                                </div>
+                                                            </div>
                                                             <h4
                                                                 class="color_light">
                                                                 A cure for
@@ -385,16 +459,26 @@
                                                                 Subtitle
                                                             </p>
                                                         </div>
-
                                                     </div>
-
-                                                    <div class="col_6 col_md_3
-                                                        col_lg_2">
+                                                    <div class="col_12 col_sm_6
+                                                        col_md_3 col_lg_2">
                                                         <div class="card">
-                                                            <img
-                                                                src="./img/sinister.jpeg"
-                                                                alt="">
-
+                                                            <div
+                                                                class="card_img">
+                                                                <img
+                                                                    src="./img/sinister.jpeg"
+                                                                    alt="Sinister">
+                                                                <div
+                                                                    class="card_overlay">
+                                                                    <div
+                                                                        class="overlay"></div>
+                                                                    <i
+                                                                        class="fa-regular
+                                                                        fa-circle-play
+                                                                        color_light
+                                                                        text_lg"></i>
+                                                                </div>
+                                                            </div>
                                                             <h4
                                                                 class="color_light">
                                                                 Sinister
@@ -415,26 +499,52 @@
                                                     accurati saranno i
                                                     suggerimenti.</p>
                                                 <div class="row">
-                                                    <div class="col_6 col_md_3
-                                                        col_lg_2">
+                                                    <div class="col_12 col_sm_6
+                                                        col_md_3 col_lg_2">
                                                         <div class="card">
-                                                            <img class="space"
-                                                                src="./img/radar.jpeg"
-                                                                alt="">
-
+                                                            <div
+                                                                class="card_img">
+                                                                <img
+                                                                    src="./img/radar.jpeg"
+                                                                    alt="Release
+                                                                    radar">
+                                                                <div
+                                                                    class="card_overlay">
+                                                                    <div
+                                                                        class="overlay"></div>
+                                                                    <i
+                                                                        class="fa-regular
+                                                                        fa-circle-play
+                                                                        color_light
+                                                                        text_lg"></i>
+                                                                </div>
+                                                            </div>
                                                             <h4
                                                                 class="color_light">
                                                                 Release Radar
                                                             </h4>
                                                         </div>
                                                     </div>
-                                                    <div class="col_6 col_md_3
-                                                        col_lg_2">
+                                                    <div class="col_12 col_sm_6
+                                                        col_md_3 col_lg_2">
                                                         <div class="card">
-                                                            <img
-                                                                src="./img/mixdaily.jpeg"
-                                                                alt="Heavy
-                                                                Metal">
+                                                            <div
+                                                                class="card_img">
+                                                                <img
+                                                                    src="./img/mixdaily.jpeg"
+                                                                    alt="Daily
+                                                                    Mix">
+                                                                <div
+                                                                    class="card_overlay">
+                                                                    <div
+                                                                        class="overlay"></div>
+                                                                    <i
+                                                                        class="fa-regular
+                                                                        fa-circle-play
+                                                                        color_light
+                                                                        text_lg"></i>
+                                                                </div>
+                                                            </div>
                                                             <h4
                                                                 class="color_light">
                                                                 Daily Mix 1
@@ -446,87 +556,143 @@
                                             <section id="popular">
                                                 <h2 class="color_light">Artisti
                                                     più popolari</h2>
-
                                                 <p class="color_tertiary
                                                     text_xs">Più ascolti, più
                                                     accurati saranno i
                                                     suggerimenti.</p>
                                                 <div class="row">
-                                                    <div class="col_6 col_md_3
-                                                        col_lg_2">
+                                                    <div class="col_12 col_sm_6
+                                                        col_md_3 col_lg_2">
                                                         <div class="card">
-                                                            <img  src="./img/youg.jpeg" alt="Lana Del Rey">
-                                                            <h4 class="color_light">
+                                                            <img
+                                                                src="./img/youg.jpeg"
+                                                                alt="Lana Del
+                                                                Rey">
+                                                            <h4
+                                                                class="color_light">
                                                                 Lana Del Rey
                                                             </h4>
                                                         </div>
                                                     </div>
-                                                    <div class="col_6 col_md_3
-                                                        col_lg_2">
+                                                    <div class="col_12 col_sm_6
+                                                        col_md_3 col_lg_2">
                                                         <div class="card">
-                                                            <img class="space" src="./img/einaudi.jpeg" alt="Giulio Einaudi">
-                                                            <h4 class="color_light">
+                                                            <img
+                                                                src="./img/einaudi.jpeg"
+                                                                alt="Giulio
+                                                                Einaudi">
+                                                            <h4
+                                                                class="color_light">
                                                                 Giulio Einaudi
                                                             </h4>
                                                         </div>
                                                     </div>
-                                                </section>
-                                            </div>
-                                        </main>
-                                    </div>
-                                    <footer id="app_footer">
-                                        <nav id="player">
-                                            <div class="row">
-                                                <div class="col_4 col_md_3">
-                                                    <div class="song">
-                                                        <div class="song_img">
-                                                            <img src="./img/sinister.jpeg" alt="Sinister">
-                                                        </div>
-                                                        <div class="song_data">
-                                                            <span class="color_light text_sm">Sinister</span>
-                                                            <span class="color_tertiary text_xs">
-                                                                Brano Nome
-                                                            </span>
-                                                        </div>
-                                                        <div class="song_buttons">
-                                                            <i class="fa-regular fa-heart color_tertiary"></i>
-                                                            <i class="fa-regular fa-folder color_tertiary"></i>
-                                                        </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </main>
+                                </div>
+                                <footer id="app_footer">
+                                    <nav id="player">
+                                        <div class="row">
+                                            <div class="col_3 col_md_4
+                                                col_md_3">
+                                                <div class="song">
+                                                    <div class="song_img">
+                                                        <img
+                                                            src="./img/sinister.jpeg"
+                                                            alt="Sinister">
                                                     </div>
-                                                </div>                                            
-                                                <div class="col_4 col_md_6">
-                                                    <div class="player">
-                                                        <div class="player_controls">
-                                                            <i class="fa-solid fa-shuffle color_light text_sm"></i>
-                                                            <i class="fa-solid fa-backward-step color_light text_sm"></i>
-                                                            <i class="fa-regular fa-circle-play color_light text_md"></i>
-                                                            <i class="fa-solid fa-forward-step color_light text_sm"></i>
-                                                            <i class="fa-solid fa-rotate-right color_light text_sm"></i>
-                                                        </div>
-                                                        <div class="player_bar">
-                                                            <span class="color_light text_xs">0:25</span>
-                                                            <div class="outer_bar">
-                                                                <div class="inner_bar"></div>
-                                                                <div class="bar_circle visibility_none"></div>
+                                                    <div class="song_data">
+                                                        <span class="color_light
+                                                            text_sm">Sinister</span>
+                                                        <span
+                                                            class="color_tertiary
+                                                            text_xs">
+                                                            Brano Nome
+                                                        </span>
+                                                    </div>
+                                                    <div class="song_buttons">
+                                                        <i class="fa-regular
+                                                            fa-heart
+                                                            color_tertiary"></i>
+                                                        <i class="fa-regular
+                                                            fa-folder
+                                                            color_tertiary"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col_6 col_md_4
+                                                col_md_6">
+                                                <div class="player">
+                                                    <div
+                                                        class="player_controls">
+                                                        <i class="fa-solid
+                                                            fa-shuffle
+                                                            color_light
+                                                            text_sm"></i>
+                                                        <i class="fa-solid
+                                                            fa-backward-step
+                                                            color_light
+                                                            text_sm"></i>
+                                                        <i class="fa-regular
+                                                            fa-circle-play
+                                                            color_light
+                                                            text_md"></i>
+                                                        <i class="fa-solid
+                                                            fa-forward-step
+                                                            color_light
+                                                            text_sm"></i>
+                                                        <i class="fa-solid
+                                                            fa-rotate-right
+                                                            color_light
+                                                            text_sm"></i>
+                                                    </div>
+                                                    <div class="player_bar">
+                                                        <span class="color_light
+                                                            text_xs">0:25</span>
+                                                        <div class="outer_bar">
+                                                            <div
+                                                                class="inner_bar">
+                                                                <div
+                                                                    class="bar_circle
+                                                                    visibility_none"></div>
                                                             </div>
-                                                            <span class="color_light text_xs">4:35</span>
+                                                        </div>
+                                                        <span class="color_light
+                                                            text_xs">4:35</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col_3 col_md_4
+                                                col_md_3">
+                                                <div class="player_settings">
+                                                    <div class="settings">
+                                                        <i class="fa-solid
+                                                            fa-list
+                                                            color_light"></i>
+                                                        <i class="fa-solid
+                                                            fa-desktop-alt
+                                                            color_light"></i>
+                                                    </div>
+                                                    <div class="volume_bar">
+                                                        <i class="fa-solid
+                                                            fa-volume-up
+                                                            color_light"></i>
+                                                        <div class="outer_bar">
+                                                            <div
+                                                                class="inner_bar">
+                                                                <div
+                                                                    class="bar_circle
+                                                                    visibility_none"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col_4 col_md_3">
-                                                    <div class="player_settings">
-                                                        <i class="fa-solid fa-list color_light"></i>
-                                                        <i class="fa-solid fa-desktop-alt color_light"></i>
-                                                        <i class="fa-solid fa-volume-up color_light"></i>
-                                                        <div class="outer_bar">
-                                                            <div class="inner_bar"></div>
-                                                            <div class="bar_circle visibility_none"></div>
-                                                        </div>
-                                                    </div>
-                                               </div>                                              
-                                            </div>                                          
-                                        </nav>                                     
-                                    </footer>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </footer>
+
                             </body>
                         </html>
-                        
