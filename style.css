@@ -25,6 +25,7 @@ body {
 
 img {
     max-width: 100%;
+    padding: 0.5rem;
 }
 
 .debug #player,
@@ -94,7 +95,7 @@ img {
 }
 
 .visibility_none {
-    display: none;
+    
 }
 
 .container {
@@ -190,11 +191,12 @@ img {
 
 
 #sidebar {
+    width: 300px;
     height: 100%;
-    width: 60px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #sidebar .side_top {
@@ -330,13 +332,13 @@ img {
 #personal .card
 #popular .card
 {
-    padding: .5rem;
+    
     min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: .5rem;
+    gap: 0.5rem;
 }
 
 #played .row,
